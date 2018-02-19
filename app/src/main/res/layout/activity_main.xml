@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dice.scarnes.app.scarnesdice.MainActivity">
+
+    <TextView
+        android:id="@+id/usertotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_toStartOf="@+id/diceimg"
+        android:text="Your Score: 0" />
+
+    <TextView
+        android:id="@+id/comptotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/usertotal"
+        android:layout_marginEnd="84dp"
+        android:text="Computer Score: 0" />
+
+    <TextView
+        android:id="@+id/userturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/usertotal"
+        android:layout_below="@+id/usertotal"
+        android:layout_marginTop="12dp"
+        android:text="Your Turn Score: 0" />
+
+    <TextView
+        android:id="@+id/compturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/comptotal"
+        android:layout_alignTop="@+id/userturn"
+        android:text="Computer Turn Score: 0" />
+
+    <ImageView
+        android:id="@+id/diceimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userturn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        app:srcCompat="@drawable/dice1" />
+
+    <Button
+        android:id="@+id/roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diceimg"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@+id/diceimg"
+        android:text="Roll" />
+
+    <Button
+        android:id="@+id/hold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/roll"
+        android:layout_centerHorizontal="true"
+        android:text="hold" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/hold"
+        android:layout_toEndOf="@+id/diceimg"
+        android:text="Reset" />
+
+    <TextView
+        android:id="@+id/computerwins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="COMPUTER WINS, PRESS RESET TO RESET" />
+
+    <TextView
+        android:id="@+id/playerwins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/computerwins"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="PLAYER WINS, PRESS RESET TO RESET" />
+
+</RelativeLayout>
